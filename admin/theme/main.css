@@ -1,0 +1,147 @@
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/* --------------------------
+ * Layout Styles
+ * --------------------------
+*/
+
+#layout {
+    padding-left: 220px; /* left col width "#menu" */
+    left: 0;
+}
+
+#main {
+    width: 100%;
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
+
+ /* --------------------------
+  * Content Module Styles
+  * --------------------------
+ */
+
+/* The content div is placed as a wrapper around all the docs */
+.content {
+    margin: 0 auto;
+    margin-bottom:50px;
+}
+
+.user {
+    padding: 10px;
+    background: #268ABE;
+    color: white;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+a.logout {line-height: 1em; padding: 0; color: white;}
+a.logout:hover {color: black;}
+.pure-button {padding: 8px;}
+a.pure-button-secondary {background-color: #191818; color: white; border-radius: 0; -webkit-border-radius: none; -moz-border-radius: none;}
+.pure-button-secondary:hover {background-color: #E0E0E0; color: black;}
+
+.pure-button {white-space: normal;}
+a.pluxml {position: absolute; bottom: 0; left: 65px; padding: 0;}
+a.pluxml:hover {color: white;}
+.extra-content {
+    float: right;
+    margin-left: 15px;
+    border-left: 1px solid #268ABE;
+    padding: 10px;
+}
+
+a.help {
+    padding:0 0 0 16px;
+    margin:0 0 0 2px;
+    width:16px;
+    cursor:help;
+    background:url('images/help.gif') no-repeat 0 0;
+}
+
+.success {
+    background: #48BF43;
+    padding: 8px;
+    color: white;
+    text-align: center;
+}
+
+/* --------------------------
+ * Main Navigation Bar Styles
+ * --------------------------
+*/
+#sidebar {
+    margin-left: -150px; /* "#menu" width */
+    width: 220px;
+    position: fixed;
+    top: 0;
+    left: 150px;
+    bottom: 0;
+    z-index: 1000; /* so the menu or its navicon stays above all content */
+    background: #191818;
+    overflow-y: auto;
+    -webkit-overflow-scroll: touch;
+}
+
+#menu a {
+    color: #fff;
+    border: none;
+    white-space: normal;
+    padding: 0.6em 0 0.6em 0.6em;
+}
+
+#menu .pure-menu-open {
+    background: transparent;
+    border: 0;
+}
+
+#menu .pure-menu ul {
+    border: none;
+    background: transparent;
+}
+
+#menu .pure-menu ul,
+#menu .pure-menu .menu-item-divided {
+    border-top: 1px solid #333;
+}
+
+.pure-menu li a:hover {
+    background: #333;
+    color: black;
+}
+
+#menu .pure-menu li:hover {
+    color: black;
+}
+
+.pure-menu-link {
+    display: none; /* show this only on small screens */
+    top: 0;
+    left: 150px; /* "#menu width" */
+    background: #000;
+    background: rgba(0,0,0,0.7);
+    padding: 0.75em 1em;
+}
+
+.pure-menu-link:hover {
+    background: #000;
+}
+
+#menu .pure-menu-heading {
+    font-size:110%;
+    color: #fff;
+}
+
+#menu .active {
+    background: #268ABE;
+}
+
+.pure-menu.pure-menu-open {background-color: transparent; border: 0px;}
+
+
+/* --------------------------
+ * Colors
+ * --------------------------
+*/
+
+a.pure-button-primary {background-color: #268ABE;}
